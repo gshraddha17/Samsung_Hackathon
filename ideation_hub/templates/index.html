@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ideation Hub</title>
+</head>
+<body>
+    <h1>Welcome to the Ideation Hub</h1>
+    <h2>Submitted Projects:</h2>
+    <ul>
+        {% for project in projects %}
+            <li>
+                <h3>{{ project.name }}</h3>
+                <p>{{ project.description }}</p>
+            </li>
+        {% endfor %}
+    </ul>
+    <p><a href="/submit_idea">Submit a Project</a></p>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Submit a Project Idea</title>
+</head>
+<body>
+    <h1>Submit a Project Idea</h1>
+    <form method="POST" action="/submit_idea">
+        <label for="name">Project Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="description">Project Description:</label><br>
+        <textarea id="description" name="description" rows="4" cols="50" required></textarea><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+    <p><a href="/">Back to Home</a></p>
+</body>
+</html>
